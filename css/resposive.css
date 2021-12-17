@@ -1,0 +1,253 @@
+@media (max-width: 1023px) {
+  .menuToggle {
+    display: block;
+  }
+  .menuToggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url("../img/open.png");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+  .menuToggle.active {
+    background: url("../img/close.png");
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  .help-selector {
+    width: 65%;
+  }
+  .responsive-contain {
+    width: 55%;
+  }
+
+  .banner-img {
+    background-position: 75% 55%;
+  }
+
+  .navigation {
+    display: none;
+  }
+  .navigation.active {
+    display: block;
+  }
+
+  .navbar-links {
+    display: grid;
+    width: 100vw;
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 100px 0;
+    padding-left: 25px;
+  }
+  .navbar-links a {
+    margin-bottom: 10px;
+    text-align: start;
+  }
+  .navbar-logo img {
+    margin-right: 160px;
+  }
+  /******************* = Navgation Section END ***************/
+
+  /***** Background Image *************/
+  .bgimg-2 {
+    background-position: 30%;
+  }
+
+  /*********************** = Boxes Section started *********************/
+  .Covid-19,
+  .Time-Crunch,
+  .Insurance {
+    margin-left: 15px;
+    width: 97%;
+  }
+
+  .Covid-19,
+  .Time-Crunch,
+  .Insurance h3 {
+    font-size: 25px;
+    line-height: 33px;
+    color: #ffffff;
+    font-weight: 700;
+  }
+
+  .covid-link {
+    width: 25%;
+    font-size: 15px;
+    line-height: 35px;
+    font-weight: 400;
+  }
+
+  .boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    grid-gap: 15px;
+  }
+
+  .cancer-patients,
+  .health-optimization,
+  .athletes,
+  .cold-flu,
+  .beauty {
+    width: 80% !important;
+  }
+
+  .text-nutrition-1 h1 {
+    font-size: 30px;
+  }
+  .text-nutrition-1 .hydros-heading {
+    font-size: 26px;
+  }
+  p.hydros-subheading,
+  p.hydros-text {
+    font-size: 18px;
+  }
+
+
+
+  /*********************** = Footer section Started *********************/
+  .f-logo {
+    display: none;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+/*********************** END ****************************/
+
+@media (max-width: 768px) {
+  nav {
+    padding: 20px 20px 10px;
+  }
+  .banner-img {
+    background: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .banner-img img {
+    border-radius: 100%;
+  }
+
+  .help-selector {
+    width: 85%;
+    margin-top: 55px;
+    margin-left: -70px;
+  }
+
+  .tagline h1 {
+    text-align: center;
+    font-size: 43px;
+    padding-top: 15px;
+    line-height: 1.31;
+    letter-spacing: -0.25px;
+  }
+
+  .tagline br {
+    display: none;
+  }
+  .scr-btn {
+    top: 60rem;
+  }
+  .covid-para {
+    font-size: 16px;
+  }
+  .mobile-img{
+    display: block;
+  }
+
+
+  .boxes {
+    margin-top: -210px;
+  }
+
+  .text-area {
+    display: block;
+  }
+  .text-nutrition-1 {
+    width: 100%;
+  }
+  p.hydros-heading {
+    padding: 0;
+  }
+  .text-nutrition-2 {
+    width: 100%;
+  }
+
+  /******************** Covid-Boxes *******************/
+
+  .Covid-19,
+  .Time-Crunch,
+  .Insurance {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .Covid-19-msg,
+  .Time-Crunch-msg,
+  .Insurance-msg {
+    width: 100%;
+    border-bottom-left-radius: 0;
+  }
+
+  .covid-para {
+    width: 100%;
+  }
+
+  .covid-link {
+    padding-bottom: 15px;
+    padding-left: 20px;
+  }
+  .bgimg-2 {
+    background-size: cover !important;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .menuToggle{
+    display: inline;
+  }
+  .navbar-logo img {
+    width: 106px;
+    margin: 0;
+  }
+  nav.sticky{
+    position: fixed;
+    background: #fff;
+    margin: 0;
+    padding: 12px 20px 7px;
+    width: 100%;
+  }
+  
+}
+
+@media (max-width: 562px) {
+  .mobile-img{
+    width: 50%;
+  }
+  footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  nav.sticky .help-selector{
+    
+  }
+}
+@media (max-width: 662px) {
+  nav.sticky navbar-logo img{
+    width: 50%;
+    height: 50%;
+  } 
+}

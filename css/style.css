@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css2?family=Trirong:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+      /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&family=Trirong:wght@100;200;300&display=swap'); */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: 'Trirong', serif;
+      }
+
+      /* Navagation section  */
+      nav .header-wrapper{
+        display: flex;
+        justify-content: space-between;
+        max-width: 1446px;
+        margin: 0 auto;
+      }
+
+      nav {
+        font-family: "Poppins";
+        text-align: center;
+        padding: 40px 20px 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in-out;
+      }
+      
+      .responsive-nav{
+        display: flex;
+        justify-content: space-between;
+      }
+      .responsive-contain{
+        display: flex;
+        justify-content: inherit;
+        width: 70%;
+      }
+
+      .navbar-links a {
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+        font-size: 15px;
+        padding: 0px 10px;
+        font-family: "Poppins";
+        text-transform: uppercase;
+      }
+      .navbar-links a:hover{
+        color: #367db2;
+      }
+      .navbar-logo img{
+        width: 200px;
+        height: 50px;
+      }
+
+      .help-selector {
+        display: flex;
+        justify-content: space-between;
+        width: 25%;
+        border-bottom: 2px solid;
+        height: fit-content;
+        font-size: 16px;
+
+      }
+
+      select {
+        padding-left: 8px;
+        outline: none;
+        border: none;
+        background: transparent;
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+        color: #ADADAD;
+        width: calc(100% - 126px);
+        text-transform: lowercase;
+        background: url('../img/scroll-btn.png');
+        background-position: 99%;
+        background-repeat: no-repeat;
+      }
+      /* To hide select arrow  */
+      select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 1px;
+        /* text-overflow: ''; */
+      }
+      
+      header {
+        background: linear-gradient(rgba(236, 237, 238, 0.69) 0%, #e9eae4 100%);
+        position: relative;
+      }
+      /* Banner section  */
+      .banner-img {
+        background: url(../img/bgimg-1.png) no-repeat;
+        width: 100%;
+        padding: 135px 0px 270px;
+        background-position: top;
+      }
+      /* .banner-img img{
+        display: none;
+      } */
+      
+      /************ SCROOL ARROW button ********************/
+      .scr-btn{
+        position: absolute;
+        right: 2%;
+        display: grid;
+        top: 42rem;
+      }
+      #scroll-btn{
+        display: flex;
+      }
+      .scroll-btn{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border: 2px solid black;
+        border-radius: 100%;
+        background-color: white;
+        margin-top: 10px;
+        position: relative;
+      }
+      .scroll-btn:hover{
+        background-color: #367db2;
+        cursor: pointer;
+      }
+      .scroll-btn:hover img {
+        filter: invert(1);
+    }
+      .scroll-btn img{
+        top: 30%;
+        left: 38%;
+        width: 10px;
+        position: absolute;
+        
+      }
+      .rotate img{
+        transform: rotate(180deg);
+      }
+/************** END ***********************/
+     .tagline h1 {
+        padding-top: 200px;
+        padding-left: 40px;
+        font-size: 43px;
+        line-height: 1.31;
+        letter-spacing: -0.25px;
+        font-weight: 400;
+        font-family: "Trirong, serif";
+      }
+
+      /*************** sticky header code  ************/
+      nav.sticky{
+        position: fixed;
+        background: #fff;
+        margin: 0;
+        padding: 12px 20px 7px;
+        width: 100%;
+      }
+
+      nav.sticky .logo,nav.sticky ul li a{
+        color:#000;
+      }
+      nav.sticky .navbar-logo img{
+      width: 160px;
+      height: 40px;
+      }
+
+      /******************END******************/
+
+      /* Boxes section  */
+
+      .boxes {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 85%;
+        margin-top: -100px;
+        margin-bottom: 150px;
+      }
+
+      .cancer-patients,
+      .health-optimization,
+      .athletes,
+      .cold-flu,
+      .beauty {
+        width: 203px;
+        height: 351px;
+        padding: 25px 15px;
+       }
+      .cancer-patients {
+        border-radius: 20px;
+        background: linear-gradient(#0894b8 0%, #77cbec 100%);
+        box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.16);
+        color: white;
+      }
+
+      .health-optimization {
+        border-radius: 20px;
+        background: linear-gradient(#45287e 0%, #dd266d 100%);
+        box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25);
+        color: white;
+      }
+
+      .athletes {
+        border-radius: 20px;
+        background: linear-gradient(#e52c69 0%, #ef7e4b 100%);
+        box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25);
+        color: white;
+      }
+
+      .cold-flu {
+        border-radius: 20px;
+        background: linear-gradient(#f08f44 0%, #f8c023 100%);
+        box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25);
+        color: white;
+      }
+      .beauty {
+        border-radius: 20px;
+        background: linear-gradient(#e9cd9f 0%, #ae825a 100%);
+        box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25);
+        color: white;
+      }
+      
+      .learn {
+        text-decoration: none;
+        font-family:"Poppins","Sans-serif";
+        color: #fff;
+        border: none;
+        padding-left: 10px;
+      }
+      .arrow{
+        padding-left: 10px;
+      }
+      .cancer-dec{
+        padding-top: 130px !important;
+      }
+      .slider-heading {
+        font-family: 'Trirong';
+        font-size: 23px;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -1px;
+      }
+
+    
+      /* text inside the box  */
+      .short-dec {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        letter-spacing: -0.02em;
+        line-height: 15px;
+        color: #fff;
+        padding-top: 26px;
+        line-height: 15px;
+        padding-left: 10px;
+      }
+
+      /* **************For Boxes Arrow button **************** */
+      .owl-nav.disabled {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: grid;
+      }
+
+      .button.owl-prev {
+        width: 40px;
+        height: 40px;
+        background: #fff;
+        border-radius: 100%;
+        border: 1px solid;
+        position: relative;
+      }
+
+      button .owl-next {
+        width: 40px;
+        height: 40px;
+        background: #fff;
+        border-radius: 100%;
+        border: 1px solid;
+        position: relative;
+      }
+      .boxes .owl-prev {
+        width: 40px;
+        height: 40px;
+        background: #fff;
+        border-radius: 100%;
+        border: 1px solid;
+        position: relative;
+      }
+      .button.owl-next {
+        position: absolute;
+      }
+
+      .owl-dots.disabled {
+        display: block;
+      }
+      
+
+
+
+      /* Text Are section  */
+      .text-area {
+        display: flex;
+        width: 95%;
+        margin: 0 auto;
+        margin-bottom: 150px;
+      }
+
+      .text-nutrition-2 {
+        width: 50%;
+      }
+      .text-nutrition-1 {
+        width: 50%;
+      }
+      .text-nutrition-1 h1{
+        font-weight: 500;
+        text-align: left;
+        color: #000;
+        font-size: 45px;
+        line-height: 1.45;
+        margin-bottom: 65px;
+        font-family: 'Trirong', serif;
+            
+      }
+
+      .text-nutrition-1 .hydros-heading{
+        font-family: 'Trirong', serif;
+        font-weight: 300;
+        font-size: 29px;
+       line-height: 1.5;
+        text-align: left;
+        color: #696969;
+        padding-right: 70px;
+      }
+     
+      .text-nutrition-2 .hydros-subheading,
+      .hydros-text{
+        font-family: "Trirong";
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 35px;
+        text-align: left;
+        color: #000;
+      }
+
+      /* Square Boxes section  */
+
+      /* Background img 2  */
+      .bgimg-2 {
+        background: url(../img/bgimg-2.png) no-repeat;
+        width: 100%;
+        padding: 200px 0 100px 0;
+        background-position: center;
+      }
+
+      /* For Covid-19  */
+      .Covid-19 {
+        display: flex;
+        justify-content: center;
+        margin-left: 40px;
+        margin-bottom: 30px;
+        width: 895px;
+        
+        border-radius: 20px;
+        background: #fff;
+        box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.16);
+      }
+
+      .Covid-19-msg {
+        width: 25%;
+        border-radius: 20px 0px 0px 20px;
+        background: #000;
+        color: white;
+        font-family: "Poppins";
+        font-weight: bold;
+        padding: 30px 0 0 45px;
+      }
+      .covid-para {
+        font-family: Poppins;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 28px;
+        width: 60%;
+        padding: 25px 10px 20px 30px;
+        color: #000;
+      }
+      .covid-link{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 20%; 
+      }
+
+      .covid-link .learn {
+        text-decoration: none;
+        color: black;
+        display: flex;
+      }
+      .covid-link a:hover{
+        color: #367db2;
+      }
+
+      .covid-link .arror-right-icon{
+        background: url(../img/readme-arrow.svg) no-repeat;
+        width: 31px;
+        height: 29px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 15px;
+      }
+      
+      /* Time-Crunch Section   */
+      .Time-Crunch {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 40px;
+        margin-bottom: 30px;
+        width: 708px;
+       
+        border-radius: 20px;
+        background: #fff;
+        box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.16);
+      }
+
+      .Time-Crunch-msg {
+        width: 30%;
+        border-radius: 20px 0px 0px 20px;
+        color: white;
+        font-family: "Poppins";
+        background: linear-gradient(#45287e 0%, #dd266d 100%);
+        padding: 30px 0 0 45px;
+      }
+
+      .Time-Crunch-para {
+        font-family: "Poppins";
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 28px;
+        width: 67%;
+        color: #000;
+        padding: 25px 10px 20px 30px;
+      }
+
+      /* Insurance Section   */
+      .Insurance {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 40px;
+        width: 708px;
+        
+        border-radius: 20px;
+        background: #fff;
+        box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.16);
+      }
+
+      .Insurance-msg {
+        width: 30%;
+        font-family: "Poppins";
+        font-weight: normal;
+        border-radius: 20px 0px 0px 20px;
+        background: linear-gradient(#0b93b2 0%, #b6cf38 100%);
+        padding: 30px 0 0 45px;
+        color: white;
+      }
+      .Insurance-para {
+        font-family: Poppins;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        width: 67%;
+        color: #000;
+        padding: 25px 10px 20px 30px;
+      }
+
+      /* Footer Section  */
+      footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 15px;
+        padding-top: 25px;
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 50px;
+        line-height: 20px;
+        margin-bottom: 100px;
+        font-family: 'Poppins', sans-serif; 
+      }
+
+      footer a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+        line-height: 25px;
+        font-size: 16px;
+        font-weight: 400;
+      }
+
+      footer span {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 25px;
+        margin-right: 5px;
+        font-family: 'Trirong', serif;    
+      }
+
+      footer h1,h2 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 17px;
+        text-transform: uppercase;
+        font-weight: 700;
+        line-height: 25px;
+        margin-top: 8px;
+        margin-bottom: 20px;
+      }
+
+      footer p {
+        font-size: 16px;
+        vertical-align: top;
+        font-weight: 400;
+        font-family: 'Poppins', sans-serif;
+    }
+      
+
+      footer .time ul li {
+        list-style: none;
+        font-family: 'Poppins', sans-serif;
+      }
+  
+      /* Footer Bottom Section  */
+      .bottom-footer {
+        border-top: 1px solid #b5b5b5;
+        padding: 23px 0;
+        font-size: 11px;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      p.copyright {
+        margin-bottom: 0;
+        display: inline-block;
+        font-size: 11px;
+        font-weight: bold;
+        color: #959595;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        line-height: 20px;
+        font-family: "Poppins", sans-serif;
+      }
+        .developer a, .developer {
+        color: #959595;
+        text-decoration: none;
+        font-weight: 400  ;
+        font-size: 11px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-family: 'Poppins', sans-serif;
+      }
+      p.developer a:hover{
+        color: #367db2;
+      }
+      .social-media a:hover{
+        color: #367db2
+      }
+      .address h1, .address p{
+        font-style: initial;
+      }
+
+      .max-width{
+        max-width: 1446px;
+        margin: 0 auto !important;
+      }
+      .menuToggle{
+        display: none;
+      }
+
+    
+
+
+  .mobile-img{
+      display: none;
+    }
+    .res-help-selector{
+        display: none;
+    }
+

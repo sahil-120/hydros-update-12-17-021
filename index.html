@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydros</title>
+
+    <!-- FontAwsome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+
+    <!-- CSS Link  -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/resposive.css">
+
+</head>
+
+<body>
+    <!-- Header section  -->
+    <header>
+        <nav>
+            <div class="responsive-nav">
+                <div class="header-wrapper">
+                    <!-- logo For navagation  -->
+                    <div class="navbar-logo">
+                        <a href="#"> <img src="img/logo-1.png" alt="navbar Logo"></a>
+                    </div>
+
+                </div>
+
+                <div class="responsive-contain">
+                    <div class="res-help-selector">
+                        <p> I need help with </p>
+                        <select>
+                            <option>select one</option>
+                            <option>select two</option>
+                            <option>select three</option>
+                            <option>select four</option>
+                            <option>select five</option>
+                            <option>select six</option>
+                            <option>select seven</option>
+                        </select>
+                    </div>
+                    <div class="help-selector">
+                        <p> I need help with </p>
+                        <select>
+                            <option>select one</option>
+                            <option>select two</option>
+                            <option>select three</option>
+                            <option>select four</option>
+                            <option>select five</option>
+                            <option>select six</option>
+                            <option>select seven</option>
+                        </select>
+                    </div>
+                    <div class="navigation">
+                        <div class="navbar-links">
+                            <a href="#">About</a>
+                            <a href="#">Why IV therapy</a>
+                            <a href="#">Treatments</a>
+                            <a href="#">Contact</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menuToggle" onclick="toggleMenu();"></div>
+            </div>
+            <!--Respontive end here-->
+        </nav>
+    </header>
+
+    <!-- Banner Section  -->
+    <div class="banner">
+        <div class="banner-img">
+            <img class="mobile-img" src="./img/mobile-baner.jpg" alt="mobile-banner">
+            <div class="tagline">
+                <h1>Receive Immediate Therapeutic Responses <br>
+                    By Correcting Deficiencies <br>
+                    Through IV Therapy. <br> </h1>
+            </div>
+        </div>
+    </div>
+    <div class="scr-btn">
+        <div class="scroll-btn">
+            <img src="./img/line-arrow.svg" alt="aarow for scroll">
+        </div>
+
+        <div class="scroll-btn rotate">
+            <img src="./img/line-arrow-2.svg" alt="aarow for scroll">
+        </div>
+    </div>
+
+
+    <!-- body boxes  -->
+    <div class="boxes owl-carousel owl-theme">
+
+        <div class="cancer-patients">
+            <h1 class="slider-heading">Cancer Patients</h1>
+            <a href="#" class="learn">Learn More</a> <br>
+            <a href="#"> <img src="./img/right-arrow.svg" alt="arrow" class="arrow"> </a>
+            <div class="short-dec cancer-dec">
+                <p>High Dose Vitamin C </p>
+                <p> Ozone +/- UV</p>
+                <p>Customized IV</p>
+            </div>
+        </div>
+
+        <div class="health-optimization health">
+            <h1 class="slider-heading health-heading">Health Optimization</h1>
+            <a href="#" class="learn health-learn">Learn More</a> <br>
+            <a href="#"> <img src="./img/right-arrow.svg" alt="arrow" class="arrow"> </a>
+            <div class="short-dec health-dec">
+                <p> Myers Cocktail</p>
+                <p> Immunity</p>
+                <p> NAD+</p>
+                <p> Ozone +/- UV</p>
+                <p> Customized IV</p>
+                <p> Athletic Recovery / Performance</p>
+                <p> Libido Boost</p>
+                <p> Anti-Aging</p>
+                <p>Stem Cells</p>
+                <p>
+            </div>
+        </div>
+
+        <div class="athletes">
+            <h1 class="slider-heading">Athletes</h1>
+            <a href="#" class="learn">Learn More</a> <br>
+            <a href="#"> <img src="./img/right-arrow.svg" alt="arrow" class="arrow"> </a>
+            <div class="short-dec">
+                <p> Athletic Recovery</p>
+                <p> Ozone +/- UV</p>
+                <p> Stem Cells</p>
+                <p> Energy</p>
+                <p> NAD+</p>
+                <p>Customized IV</p>
+            </div>
+        </div>
+
+        <div class="cold-flu">
+            <h1 class="slider-heading">Cold & Flu</h1>
+            <a href="#" class="learn">Learn More</a> <br>
+            <a href="#"> <img src="./img/right-arrow.svg" alt="arrow" class="arrow"> </a>
+            <div class="short-dec">
+                <p> Alternative & Synergistic Treatment</p>
+                <p> Cold & Flu</p>
+                <p> Mold Exposure</p>
+                <p> Auto-Immune Disorders</p>
+                <p> General Health</p>
+                <p> Shots & Boosts</p>
+            </div>
+        </div>
+
+        <div class="beauty">
+            <h1 class="slider-heading">Beauty</h1>
+            <a href="#" class="learn">Learn More</a> <br>
+            <a href="#"> <img src="./img/right-arrow.svg" alt="arrow" class="arrow"> </a>
+            <div class="short-dec">
+                
+                <p>Alternative & Synergistic Treatment</p>
+                <p> Matters Athletic</p>
+                <p> Health Optimization</p>
+                <p> Flu Cold &</p>
+                <p> Mold Exposure</p>
+                <p> Auto-Immune Disorders</p>
+                <p> Heavy Metal Treatment</p>
+                
+            </div>
+        </div>
+
+    </div>
+    <!-- Body text Area  -->
+    <div class="text-area">
+        <!--text main div -->
+
+        <div class="text-nutrition-1">
+            <h1>At Hydros,<br> We Specialize in <br> Intravenous(IV) Nutrition. </h1>
+            <p class="hydros-heading">
+                Intravenous (IV) nutrition is a method of feeding vitamins, minerals, and other natural substances
+                directly into a patient’s bloodstream. Bypassing the digestive system is the main advantage of IV
+                nutrition.
+            </p>
+        </div>
+        <div class="text-nutrition-2">
+            <p class="hydros-subheading">When substances are given orally they must be processed through the stomach and
+                the
+                intestines. Many
+                substances may be rendered inactive in the digestive tract, or may not be well absorbed due to poor
+                intestinal function. By directly administering nutrients to the body higher than normal blood levels
+                can
+                be achieved. These increased levels can provide an immediate therapeutic response by correcting
+                deficiencies that may arise from a disease state.
+            </p> <br>
+
+            <p class="hydros-text">
+                Scientific research has demonstrated that a variety of conditions can benefit from the use of IV
+                nutrition. A few of the conditions that may be helped using IV nutrition techniques include
+                hypertension, COPD, asthma, fibromyalgia, chronic fatigue syndrome, diabetes, hepatitis, and even
+                the
+                common cold.
+            </p>
+        </div>
+    </div>
+
+    <!-- For Body Boxes  -->
+    <div class="bgimg-2">
+        <div class="Covid-19">
+            <div class="Covid-19-msg">
+                <h3>Covid-19</h3>
+                <small>Our Guidelines</small>
+            </div>
+
+            <div class="covid-para">
+                <div class="resp">
+                <p>Our office has always had completely private</p>
+                <p> rooms for IV’s, and we will be continuing </p>
+                <p>to provide that exclusively for our IV patients.</p>
+                </div>
+            </div>
+
+            <div class="covid-link">
+                <a href="#" class="learn">Read More
+                    <span class="arror-right-icon">&nbsp;</span>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="Time-Crunch">
+
+            <div class="Time-Crunch-msg">
+                <h3>Time</h3>
+                <h4>Time-Crunch</h4>
+            </div>
+
+            <div class="Time-Crunch-para">
+                <p> An intravenous push may be more </p>
+                <p> accommodating. They take only 10 minutes</p>
+                <p> and can get you on track to feeling great. </p>
+            </div>
+        </div>
+
+        <div class="Insurance">
+            <div class="Insurance-msg">
+                <h3>Insurance</h3>
+                <small> & Payments</small>
+            </div>
+
+            <div class="Insurance-para">
+                <p>- Insurance Coverage</p>
+                <p>- Health Saving Plans</p>
+                <p>- Flex Programs</p>
+                <p>- 6-Month 0 Interest Financing</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer TOP Section star here  -->
+    <div class="max-width">
+
+
+        <footer>
+            <!-- Logo for Footer  -->
+            <div class="f-logo">
+                <img src="img/logo-2.png" alt="footer img">
+            </div>
+
+            <div class="time">
+                <h1>Office Hours</h1>
+                <ul>
+                    <li> <span>Mon–Thu:</span> 9–4 </li>
+                    <li> <span>Fri:</span> 9–5 </li>
+                    <li> <span>Sat:</span> 9–1 </li>
+                    <li> <span>Sun:</span> By Request Only </li>
+                </ul>
+            </div>
+
+            <div class="email">
+                <h1>EMAIL</h1>
+                <a href="mailto:info@hydrosclinics.com">
+                    info@hydrosclinics.com
+                </a>
+            </div>
+
+            <div class="phone">
+                <h1>PHONE</h1>
+                <p>13 . 781 . 1905</p>
+            </div>
+
+            <div class="address">
+                <h2>address</h2>
+                <p>5910 Fairdale ln.</p>
+                <p>Houston, Tx 77057</p>
+            </div>
+
+            <div class="social-media">
+                <h1> LETS'S GET SOCIAL </h1>
+                <a href="#">
+                    <p>FACEBOOK</p>
+                </a>
+                <a href="#">
+                    <p>Twitter</p>
+                </a>
+                <a href="#">
+                    <p>Instagram</p>
+                </a>
+                <a href="#">
+                    <p>Linked</p>
+                </a>
+            </div>
+        </footer>
+
+        <!-- Footer Bottom Section  -->
+        <div class="bottom-footer">
+            <p class="copyright">© hydros clinics </p>
+
+            <p class="developer">
+                <a href="https://owdt.com/" target="_blank" rel="noopener">Web Design</a>
+                BY
+                <a href="https://owdt.com/" target="_blank" rel="noopener">OWDT</a>
+            </p>
+        </div>
+
+    </div>
+
+    <!-- JavaSrcipt Links for slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+
+    <script>
+
+        //Sript for STICKY Navbar
+        window.addEventListener("scroll", function () {
+
+            var header = document.querySelector("nav");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+
+        
+        //    Responsive TogleBAR 
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+
+        function toggleMenu() {
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+
+        // JavaSrcipt code for silader
+        
+        // $('.owl-carousel').owlCarousel({
+        //     loop: true,
+        //     margin: 10,
+        //     nav: true,
+        //     autoplay: true,
+        //     responsive: {
+        //         0: {
+        //             items: 1
+        //         },
+        //         600: {
+        //             items: 3
+        //         },
+        //         1000: {
+        //             items: 5
+        //         }
+        //     }
+        // })
+
+    </script>
+</body>
+
+</html>
